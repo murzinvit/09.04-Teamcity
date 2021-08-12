@@ -12,5 +12,5 @@
 > Форк: [https://github.com/murzinvit/example-teamcity](https://github.com/murzinvit/example-teamcity) </br>
 
 ### Заметки:
-При попытке установки на virtulbox Ubuntu:
+При попытке docker-compose up на virtulbox Ubuntu:
 ![screen](https://github.com/murzinvit/screen/blob/ba203c3de3f2d5a2e3585d6ef0e6857f277beeb1/Error_in_enviroment_deploy.png)
