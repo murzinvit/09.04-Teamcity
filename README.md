@@ -35,7 +35,7 @@
 6. Создайте отдельную ветку feature/add_reply в репозитории: </br>
   `git clone git@github.com:m....`, `git checkout -b "feature/add_reply` </br>
 7. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово hunter: </br>
-   [Welcomer.java](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/main/java/plaindoll/Welcomer.java)
+   [Welcomer.java](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/main/java/plaindoll/Welcomer.java) </br>
 8. Дополните тест для нового метода на поиск слова hunter в новой реплике: [WelcomerTest.java](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/test/java/plaindoll/WelcomerTest.java)</br>
 9. Сделайте push всех изменений в новую ветку в репозиторий: </br>
    `git add -A, git commit -m "Add Hunter", git push origin feature/add_reply`  [feature/add_reply](https://github.com/murzinvit/example-teamcity/tree/feature/add_reply) </br>
@@ -43,8 +43,13 @@
  Добавил новый в Teamcity новый VCS Root c default branch - feature/add_reply </br>
  Добавил триггер при коммите в ветку - запуск buid: </br>
  ![screen](https://github.com/murzinvit/screen/blob/f588710756559a7fd3c908ae8f0d14f7d288707c/Teamcity_trigger.jpg)
- 
-
+ ![screen](https://github.com/murzinvit/screen/blob/dc4aecdf3ca9905e632e25224822a9d6d391f269/Teamcity_build_add_reply.jpg)
+11. Внесите изменения из произвольной ветки feature/add_reply в master через Merge: </br>
+`git merge feature/add_reply && git push origin master`  [repo_merged](https://github.com/murzinvit/example-teamcity)
+12. Убедитесь, что нет собранного артефакта в сборке по ветке master: </br>
+ ![screen](https://github.com/murzinvit/screen/blob/fb0b335a713f07189bd89985181e514834469fd1/No_artefacts.jpg)
+13. Настройте конфигурацию так, чтобы она собирала .jar в артефакты сборки: </br>
+14. 
  Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
 ![screen](https://github.com/murzinvit/screen/blob/e61843793bf13077bf5d66c17a9387576b60835b/Teamcity_transfer_to_github.jpg)
 
