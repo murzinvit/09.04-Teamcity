@@ -19,7 +19,7 @@
 3.Сохраните необходимые шаги, запустите первую сборку master'a: </br>
  ![screen](https://github.com/murzinvit/screen/blob/23915ce96b856cb54169526cc000d2d6c675940a/Teamcity_buil_on_master.jpg)
 4.Поменяйте условия сборки: если сборка по ветке master, то должен происходит mvn clean package, иначе mvn clean test: </br>
- Для выполнения cделал ветку - dev от master: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>
+ Для выполнения cделал ветку - dev от master: `git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev` </br>
  Создал проект.</br>
  Создал VCS Root из репозитория example-teamcity с default branch - dev</br>
  Создал VCS Root из репозитория example-teamcity с default branch - master</br>
@@ -30,6 +30,16 @@
 ![screen](https://github.com/murzinvit/screen/blob/f6033dfcfb06f5b87124018b5f738f9d44fe3cd3/Build_in_master_branch.jpg)
 ![screen](https://github.com/murzinvit/screen/blob/fa06bd5041e390e93a6b3827ef1b1b0c27fe9f8c/Teamcity_build_on_master_changes.jpg)
 5. Мигрируйте build configuration в репозиторий: </br>
+ 
+6. Создайте отдельную ветку feature/add_reply в репозитории: </br>
+  `git checkout -b "feature/add_reply` </br>
+7. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово hunter: </br>
+   ![screen](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/main/java/plaindoll/Welcomer.java)
+8. Дополните тест для нового метода на поиск слова hunter в новой реплике: </br>
+   ![screen](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/test/java/plaindoll/WelcomerTest.java)
+9. Сделайте push всех изменений в новую ветку в репозиторий: </br>
+   `git add -A, git commit -m "Add Hunter", git push origin feature/add_reply`  [feature/add_reply](https://github.com/murzinvit/example-teamcity/tree/feature/add_reply) </br>
+10. 
 Добавить Connections в github [Инструкция](https://www.jetbrains.com/help/teamcity/configure-and-run-your-first-build.html#Create+project+pointing+to+GitHub.com+repository) </br>
  </br>
  Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
