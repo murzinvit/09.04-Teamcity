@@ -36,5 +36,7 @@ Cделал ветку - dev от master: git clone git@github.com:murzinvit/exa
 Сделал изменения в pom.xml - version - 0.2.1, groupId - DevOps6, далее закоммитил и запушил изменения: </br>
 
 ### Рабочие заметки:
+### Добавить VCS Root in Build Steps:
+![screen](https://github.com/murzinvit/screen/blob/493590593f657745f0766cc0a4f2f311eccbc7bf/Teamcity_add_VCS_in_BuildSteps.jpg)
 При попытке docker-compose up на virtulbox Ubuntu:
 ![screen](https://github.com/murzinvit/screen/blob/ba203c3de3f2d5a2e3585d6ef0e6857f277beeb1/Error_in_enviroment_deploy.png)
