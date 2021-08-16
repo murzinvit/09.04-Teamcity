@@ -32,11 +32,11 @@
 5. Мигрируйте build configuration в репозиторий: </br>
  
 6. Создайте отдельную ветку feature/add_reply в репозитории: </br>
-  `git checkout -b "feature/add_reply` </br>
+  `git clone git@github.com:m....`, `git checkout -b "feature/add_reply` </br>
 7. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово hunter: </br>
-   ![screen](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/main/java/plaindoll/Welcomer.java)
+   [Welcomer.java](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/main/java/plaindoll/Welcomer.java)
 8. Дополните тест для нового метода на поиск слова hunter в новой реплике: </br>
-   ![screen](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/test/java/plaindoll/WelcomerTest.java)
+   [WelcomerTest.java](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/test/java/plaindoll/WelcomerTest.java)
 9. Сделайте push всех изменений в новую ветку в репозиторий: </br>
    `git add -A, git commit -m "Add Hunter", git push origin feature/add_reply`  [feature/add_reply](https://github.com/murzinvit/example-teamcity/tree/feature/add_reply) </br>
 10. 
