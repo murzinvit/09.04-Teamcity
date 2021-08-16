@@ -19,6 +19,13 @@
 3.Сохраните необходимые шаги, запустите первую сборку master'a: </br>
  ![screen](https://github.com/murzinvit/screen/blob/23915ce96b856cb54169526cc000d2d6c675940a/Teamcity_buil_on_master.jpg)
 4.Поменяйте условия сборки: если сборка по ветке master, то должен происходит mvn clean package, иначе mvn clean test: </br>
+ Для выполнения cделал ветку - dev от master: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>
+ Создал проект.</br>
+ Создал VCS Root из репозитория example-teamcity с default branch - dev</br>
+ Создал VCS Root из репозитория example-teamcity с default branch - master</br>
+ При создании VCS root, поле - VCS root name уникально и произвольно для каждого VCS root</br>
+ В проекте создал 2 BuildStepsConfigurations на каждый VCS Root свою - clean test, clean package соответственно для dev и master</br>
+ 
 Cделал ветку - dev от master: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>
 Далее создал проект где указал основной веткой - dev, в build steps добавил clean test, добавил триггер при коммите в ветку - запуск buid: </br>
 Сделал изменения в pom.xml - version - 0.2.1, groupId - DevOps6, далее закоммитил и запушил изменения: </br>
