@@ -32,7 +32,9 @@
 5. Мигрируйте build configuration в репозиторий: </br>
 Добавить Connections в github [Инструкция](https://www.jetbrains.com/help/teamcity/configure-and-run-your-first-build.html#Create+project+pointing+to+GitHub.com+repository) </br>
  </br>
-![screen]()
+ Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
+![screen](https://github.com/murzinvit/screen/blob/e61843793bf13077bf5d66c17a9387576b60835b/Teamcity_transfer_to_github.jpg)
+
 Cделал ветку - dev от master: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>
 Далее создал проект где указал основной веткой - dev, в build steps добавил clean test, добавил триггер при коммите в ветку - запуск buid: </br>
 Сделал изменения в pom.xml - version - 0.2.1, groupId - DevOps6, далее закоммитил и запушил изменения: </br>
