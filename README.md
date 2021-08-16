@@ -13,7 +13,7 @@
 #### Основная часть: </br>
 1.Создайте новый проект в teamcity на основе fork </br>
  ![screen](https://github.com/murzinvit/screen/blob/0273c89b0832235d44b64c492c24fbfa8057ba7e/New_progect_create.jpg)
- ![screen](https://github.com/murzinvit/screen/blob/b050b7be17b6885341cd0923dbf3c513ceeac033/Teamcity_VCS_root.jpg)
+ ![screen](https://github.com/murzinvit/screen/blob/0908e37be5fe544aa445ad079ea90aee7bff578f/Teamcity_VCS_root.jpg)
 2.Сделайте autodetect конфигурации </br>
  ![screen](https://github.com/murzinvit/screen/blob/5340a0c3570d57b804351ed69d4f401b47bef3ec/Teamcity_autodetect_buildsteps.jpg)
 Далее сделал ветку dev от main: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>  
