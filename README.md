@@ -27,7 +27,8 @@
  В проекте создал 2 BuildStepsConfigurations на каждый VCS Root свою - clean test, clean package соответственно для dev и master</br>
 ![screen](https://github.com/murzinvit/screen/blob/79f2e714de33777fc2f06b0bdf06d60211dcada1/Teamcity_build_on_branch_dev.jpg)
 ![screen](https://github.com/murzinvit/screen/blob/d68ae895084e971a2697480809e87e7e821cf03e/Teamcity_build_goals.jpg)
-
+![screen](https://github.com/murzinvit/screen/blob/f6033dfcfb06f5b87124018b5f738f9d44fe3cd3/Build_in_master_branch.jpg)
+![screen](https://github.com/murzinvit/screen/blob/fa06bd5041e390e93a6b3827ef1b1b0c27fe9f8c/Teamcity_build_on_master_changes.jpg)
 Cделал ветку - dev от master: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>
 Далее создал проект где указал основной веткой - dev, в build steps добавил clean test, добавил триггер при коммите в ветку - запуск buid: </br>
 Сделал изменения в pom.xml - version - 0.2.1, groupId - DevOps6, далее закоммитил и запушил изменения: </br>
