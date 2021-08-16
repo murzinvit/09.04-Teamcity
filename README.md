@@ -30,18 +30,21 @@
 ![screen](https://github.com/murzinvit/screen/blob/f6033dfcfb06f5b87124018b5f738f9d44fe3cd3/Build_in_master_branch.jpg)
 ![screen](https://github.com/murzinvit/screen/blob/fa06bd5041e390e93a6b3827ef1b1b0c27fe9f8c/Teamcity_build_on_master_changes.jpg)
 5. Мигрируйте build configuration в репозиторий: </br>
- 
+   Добавить Connections на github(в Root_Project) [Инструкция](https://www.jetbrains.com/help/teamcity/configure-and-run-your-first-build.html#Create+project+pointing+to+GitHub.com+repository) </br>
+   ![screen](https://github.com/murzinvit/screen/blob/3fc63d017518169500d83d6ea447780dd64a3e6c/Teamcity_build_from_github.jpg)
 6. Создайте отдельную ветку feature/add_reply в репозитории: </br>
   `git clone git@github.com:m....`, `git checkout -b "feature/add_reply` </br>
 7. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово hunter: </br>
    [Welcomer.java](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/main/java/plaindoll/Welcomer.java)
-8. Дополните тест для нового метода на поиск слова hunter в новой реплике: </br>
-   [WelcomerTest.java](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/test/java/plaindoll/WelcomerTest.java)
+8. Дополните тест для нового метода на поиск слова hunter в новой реплике: [WelcomerTest.java](https://github.com/murzinvit/example-teamcity/blob/feature/add_reply/src/test/java/plaindoll/WelcomerTest.java)</br>
 9. Сделайте push всех изменений в новую ветку в репозиторий: </br>
    `git add -A, git commit -m "Add Hunter", git push origin feature/add_reply`  [feature/add_reply](https://github.com/murzinvit/example-teamcity/tree/feature/add_reply) </br>
-10. 
-Добавить Connections в github [Инструкция](https://www.jetbrains.com/help/teamcity/configure-and-run-your-first-build.html#Create+project+pointing+to+GitHub.com+repository) </br>
- </br>
+10. Убедитесь что сборка самостоятельно запустилась, тесты прошли успешно: </br>
+ Добавил новый в Teamcity новый VCS Root c default branch - feature/add_reply </br>
+ Добавил триггер при коммите в ветку - запуск buid: </br>
+ ![screen](https://github.com/murzinvit/screen/blob/f588710756559a7fd3c908ae8f0d14f7d288707c/Teamcity_trigger.jpg)
+ 
+
  Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
 ![screen](https://github.com/murzinvit/screen/blob/e61843793bf13077bf5d66c17a9387576b60835b/Teamcity_transfer_to_github.jpg)
 
