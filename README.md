@@ -7,13 +7,15 @@
 Либо так: </br>
 Ставим docker-compose: `apt-get update && apt install docker-compose -y` </br>
 Клонируем репозиторий: `git clone https://github.com/netology-code/mnt-homeworks.git` </br>
-Для поднятия инфраструктуры свободного места на диске нужно более 10Gb, т.к контейнеры по 2.2Gb: `cd / && df -h` </br> 
+Для поднятия инфраструктуры свободного места на диске нужно более 10Gb, т.к контейнеры по 2.2Gb: `cd / && df -h` </br>
 Выполняем: `cd ./mnt-homeworks/09-ci-04-teamcity/teamcity && docker-compose up` </br> 
 5. Сделайте fork репозитория [aragastmatb/example-teamcity](https://github.com/aragastmatb/example-teamcity) Форк: [https://github.com/murzinvit/example-teamcity](https://github.com/murzinvit/example-teamcity) </br>
-#### Основная часть: 
-1.Создайте новый проект в teamcity на основе fork
+#### Основная часть: </br>
+1.Создайте новый проект в teamcity на основе fork </br>
  ![screen](https://github.com/murzinvit/screen/blob/0273c89b0832235d44b64c492c24fbfa8057ba7e/New_progect_create.jpg)
  ![screen](https://github.com/murzinvit/screen/blob/b050b7be17b6885341cd0923dbf3c513ceeac033/Teamcity_VCS_root.jpg)
+2.Сделайте autodetect конфигурации </br>
+ ![screen](https://github.com/murzinvit/screen/blob/5340a0c3570d57b804351ed69d4f401b47bef3ec/Teamcity_autodetect_buildsteps.jpg)
 Далее сделал ветку dev от main: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>  
 
 ### Рабочие заметки:
