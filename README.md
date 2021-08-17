@@ -55,7 +55,7 @@
 14. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны: </br>
    ![screen](https://github.com/murzinvit/screen/blob/40830850752bf9fde5a42b3edf54583e8d96cc08/Teamcity_artifacts_jar.jpg)
 15. Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity:</br>
-
+   ![screen](https://github.com/murzinvit/screen/blob/6035ccd7541e150f3af8bddce41759d9ce8d508b/Teamcity_proove_build_from_git_1.jpg)
 
 ### Рабочие заметки:
 ### Добавить VCS Root in Build Steps:
