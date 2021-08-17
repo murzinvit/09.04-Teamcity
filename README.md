@@ -52,17 +52,18 @@
     jar получается из шагов clean и package, указать в build steps:</br>
     Настроить публикацию артифакта можно в Progect -> General Settings -> Artifact paths -> target </br>
     ![screen](https://github.com/murzinvit/screen/blob/811dc8072851fcf0c3512219dab8ce1fcddc9b34/Teamcity_artifact_public.jpg)
-    ![screen](https://github.com/murzinvit/screen/blob/40830850752bf9fde5a42b3edf54583e8d96cc08/Teamcity_artifacts_jar.jpg)
-14. 
- Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
-![screen](https://github.com/murzinvit/screen/blob/e61843793bf13077bf5d66c17a9387576b60835b/Teamcity_transfer_to_github.jpg)
+14. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны: </br>
+   ![screen](https://github.com/murzinvit/screen/blob/40830850752bf9fde5a42b3edf54583e8d96cc08/Teamcity_artifacts_jar.jpg)
+15. Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity:</br>
 
-Cделал ветку - dev от master: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>
-Далее создал проект где указал основной веткой - dev, в build steps добавил clean test, добавил триггер при коммите в ветку - запуск buid: </br>
-Сделал изменения в pom.xml - version - 0.2.1, groupId - DevOps6, далее закоммитил и запушил изменения: </br>
 
 ### Рабочие заметки:
 ### Добавить VCS Root in Build Steps:
 ![screen](https://github.com/murzinvit/screen/blob/493590593f657745f0766cc0a4f2f311eccbc7bf/Teamcity_add_VCS_in_BuildSteps.jpg)
 При попытке docker-compose up на virtulbox Ubuntu:
 ![screen](https://github.com/murzinvit/screen/blob/ba203c3de3f2d5a2e3585d6ef0e6857f277beeb1/Error_in_enviroment_deploy.png)
+Cделал ветку - dev от master: git clone git@github.com:murzinvit/example-teamcity.git && git checkout -b "dev" && git push origin dev </br>
+Далее создал проект где указал основной веткой - dev, в build steps добавил clean test, добавил триггер при коммите в ветку - запуск buid: </br>
+Сделал изменения в pom.xml - version - 0.2.1, groupId - DevOps6, далее закоммитил и запушил изменения: </br>
+ Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
+![screen](https://github.com/murzinvit/screen/blob/e61843793bf13077bf5d66c17a9387576b60835b/Teamcity_transfer_to_github.jpg)
