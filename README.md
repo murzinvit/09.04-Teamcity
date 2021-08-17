@@ -49,6 +49,10 @@
 12. Убедитесь, что нет собранного артефакта в сборке по ветке master: </br>
  ![screen](https://github.com/murzinvit/screen/blob/fb0b335a713f07189bd89985181e514834469fd1/No_artefacts.jpg)</br>
 13. Настройте конфигурацию так, чтобы она собирала .jar в артефакты сборки: </br>
+    jar получается из шагов clean и package, указать в build steps:</br>
+    Настроить публикацию артифакта можно в Progect -> General Settings -> Artifact paths -> target </br>
+    ![screen](https://github.com/murzinvit/screen/blob/811dc8072851fcf0c3512219dab8ce1fcddc9b34/Teamcity_artifact_public.jpg)
+    ![screen](https://github.com/murzinvit/screen/blob/40830850752bf9fde5a42b3edf54583e8d96cc08/Teamcity_artifacts_jar.jpg)
 14. 
  Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
 ![screen](https://github.com/murzinvit/screen/blob/e61843793bf13077bf5d66c17a9387576b60835b/Teamcity_transfer_to_github.jpg)
