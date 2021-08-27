@@ -70,5 +70,5 @@ Cделал ветку - dev от master: git clone git@github.com:murzinvit/exa
  Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
 ![screen](https://github.com/murzinvit/screen/blob/e61843793bf13077bf5d66c17a9387576b60835b/Teamcity_transfer_to_github.jpg)
 </br>
-### Docker-compose запстился:</br>
+### Teamcity environment from docker-compos.yml - ok:</br>
 ![screen](https://github.com/murzinvit/screen/blob/c26c939c233ca1b7160f5d777cd953223de1c4dc/Teamcity_ENV_Ok_Docker_Compose.png)
