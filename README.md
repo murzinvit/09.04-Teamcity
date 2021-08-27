@@ -1,14 +1,16 @@
 ## 09.04-Teamcity</br>
 #### Подготовка к выполнению
 1. Поднимите инфраструктуру teamcity</br>
-Поднял так: </br>
+Установка инфраструктуры TeamCity: </br>
     Docker pull jetbrains/teamcity-server:latest && Docker run -d -p 8111:8111 --name team-srv jetbrains/teamcity-server:latest </br>
-    После стандартных настроек, во вкладке - Agents push указал ip + login/password машины в роли агента(без агентов билды не работают) </br>
-Либо так: </br>
-Ставим docker-compose: `apt-get update && apt install docker-compose -y` </br>
-Клонируем репозиторий: `git clone https://github.com/netology-code/mnt-homeworks.git` </br>
+    После стандартных настроек с указанием типа БД, во вкладке - Agents push указал ip + login/password машины в роли агента(без агентов билды не работают) </br>
+Установка инфраструктуры с помощью docker-compose: </br>
+Установка самого docker-compose(предполагается что docker уже установлен): `apt update && apt install docker-compose -y` </br>
+Клонируем репозиторий: `git clone git@github.com/netology-code/mnt-homeworks.git` </br>
 Для поднятия инфраструктуры свободного места на диске нужно более 10Gb, т.к контейнеры по 2.2Gb: `cd / && df -h` </br>
-Выполняем: `cd ./mnt-homeworks/09-ci-04-teamcity/teamcity && docker-compose up` </br> 
+Для корректной установки, нужно создать папки ~/data, ~/logs, ~/agent </br>
+Для подключения teamcity-agent нужно поменять в docker-compose.yml - http:teamcity:8111 на http://localhost:8111 </br>
+Перейтив в папку с docker-compose.yml и запустить установку: `cd ./mnt-homeworks/09-ci-04-teamcity/teamcity && docker-compose up` </br> 
 5. Сделайте fork репозитория [aragastmatb/example-teamcity](https://github.com/aragastmatb/example-teamcity) Форк: [https://github.com/murzinvit/example-teamcity](https://github.com/murzinvit/example-teamcity) </br>
 #### Основная часть: </br>
 1.Создайте новый проект в teamcity на основе fork: </br>
@@ -67,3 +69,4 @@ Cделал ветку - dev от master: git clone git@github.com:murzinvit/exa
 Сделал изменения в pom.xml - version - 0.2.1, groupId - DevOps6, далее закоммитил и запушил изменения: </br>
  Нажать на значке github и авторизоваться выйдет список репозиториев: </br>
 ![screen](https://github.com/murzinvit/screen/blob/e61843793bf13077bf5d66c17a9387576b60835b/Teamcity_transfer_to_github.jpg)
+![screen](https://github.com/murzinvit/screen/blob/c26c939c233ca1b7160f5d777cd953223de1c4dc/Teamcity_ENV_Ok_Docker_Compose.png)
